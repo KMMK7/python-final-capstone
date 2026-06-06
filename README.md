@@ -55,7 +55,7 @@ Handling discounted products
 Step 4: Export Results
 All scraped data is combined into a Pandas DataFrame and exported to:Final Data.xlsx.
 
-⚠️ Disclaimer
+⚠️ Disclaimer:
 This script is designed purely for educational and data analysis purposes. Ensure you comply with the website's terms of service and robots.txt guidelines before running high-frequency requests.
 
 
