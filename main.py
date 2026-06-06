@@ -1,5 +1,6 @@
 #####################Smartphone Website Data Extraction Project##################
 
+#Import the required libraries
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
