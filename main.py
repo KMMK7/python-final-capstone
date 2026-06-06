@@ -43,7 +43,7 @@ def extract_p_price(p_info_tag):
     ## Transform product price
     p_price = p_price.replace(",", "").replace("\xa0Ks", "") 
     try:
-        p_price = float(p_price) # change into float data type            
+        p_price = int(p_price) # change into float data type            
     except ValueError:
         # Handle the discount prices
         discount_price_list = p_price.split("\n")
@@ -51,7 +51,7 @@ def extract_p_price(p_info_tag):
         p_price = discount_price_list[-1]
         # remove spaces from the text
         p_price = p_price.strip()
-        p_price = float(p_price) # change into float data type
+        p_price = int(p_price) # change into float data type
     return p_price
 
 final_df = pd.DataFrame() #Create an empty dataframe
